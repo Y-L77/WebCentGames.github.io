@@ -1,0 +1,224 @@
+body {
+    background-color: blueviolet;
+    color: #fff; /* Ensure default text color contrasts well */
+    font-family: Arial, sans-serif; /* Add a default font-family */
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    background-color: lightblue;
+    color: #fff; /* Ensure header text is readable */
+    position: relative;
+    z-index: 10; /* Ensure header stays on top */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logos vertically */
+}
+
+.logo img {
+    width: 70px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Adjust spacing between logos */
+}
+
+.logo a {
+    color: #fff; /* Ensure link color is readable */
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black; /* Ensure link color is readable */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    background: url('evenmoresigmalandscape.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Optional margin to separate from header */
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero h1 {
+    font-size: 3em; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007bff; /* Change to desired color */
+    border-radius: 25px; /* Circle edge */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Change to desired hover color */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+#logowebsite{
+    height: 50px;
+    width: auto;
+}
+.cta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    margin: 40px 0; /* Add margin above and below */
+}
+
+.cta-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row, adjust based on screen size */
+    max-width: 500px; /* Set a max-width for better control */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+.cta-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.cta-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow on hover */
+}
+
+.cta-text {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+}
+
+.cta-text h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.cta-text p {
+    margin: 10px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-item {
+        flex: 1 1 100%; /* Stack items on smaller screens */
+    }
+}
+.padding {
+    background-image: url('finalcool.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 600px; /* Sets the height of the section */
+    display: flex; /* Uses flexbox for centering content */
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+    color: white; /* Optional: changes text color to white for better contrast */
+}
+.centered{
+    text-align: center;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-text, .right-text {
+    width: 45%;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.right-text {
+    text-align: left;
+}
+.pricing-section {
+    background-color: #3D2A6A; /* Dark purple background */
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.pricing-box {
+    background-color: #4F3A6A; /* Slightly lighter dark purple */
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-box h3 {
+    margin-top: 0;
+}
+
+.pricing-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-box ul li {
+    margin-bottom: 10px;
+}
